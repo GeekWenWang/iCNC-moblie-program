@@ -867,7 +867,7 @@ private: System::Void Button_send_Serial_Click(System::Object^  sender, System::
 
 private: System::Void Button_forward_mousedown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) 
 		 {
-			serialCmd[0] = 50;
+			serialCmd[0] = 54;
 			serialCmd[1] = '!';
 		 }
 private: System::Void Button_forward_mouseup(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) 
@@ -887,7 +887,7 @@ private: System::Void Button_CW_mouseup(System::Object^  sender, System::Windows
 		 }
 private: System::Void Button_backward_mousedown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) 
 		 {
-			 serialCmd[0] = 71;
+			 serialCmd[0] = 75;
 			 serialCmd[1] = '!';
 		 }
 private: System::Void Button_backward_mouseup(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) 
