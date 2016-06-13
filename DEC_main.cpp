@@ -173,9 +173,9 @@ int decOpenFile(DEC_DATA  *decDataPtr)
 	{
 		
 		//preprocessing
-		result = fseek(decDataPtr->ncFilePtr, 1, SEEK_END);
+		result = fseek(decDataPtr->ncFilePtr, 0, SEEK_END);
 		size = ftell(decDataPtr->ncFilePtr);
-		result = fseek(decDataPtr->ncFilePtr, 1, SEEK_SET);
+		result = fseek(decDataPtr->ncFilePtr, 0, SEEK_SET);
 
 //		char *dynamicBufferReset[10000];
 		//using dynamic buffer or memory to hold all file text!
